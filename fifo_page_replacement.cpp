@@ -33,3 +33,13 @@ int pageFaults(int pages[], int n, int capacity)
 
 	return page_faults; 
 } 
+
+int main() 
+{ 
+	int pages[] = {7, 0, 1, 2, 0, 3, 0, 4, 
+				2, 3, 0, 3, 2}; 
+	int n = sizeof(pages)/sizeof(pages[0]); 
+	int capacity = 4; 
+	cout << pageFaults(pages, n, capacity); 
+	return 0; 
+} 
